@@ -1,0 +1,103 @@
+# Example YAML configuration file for datasets
+# Format:
+# dataset_name:
+#   real: path/to/real/images
+#   fake: path/to/fake/images
+#   data_mode: wang2020 or custom_mode
+
+DRCT:
+  real: /root/autodl-tmp/AIGC_data/MSCOCO/val2017
+  # sd
+  ldm-t2i:
+    fake: /root/autodl-tmp/AIGC_data/DRCT-2M/ldm-text2im-large-256/val2017
+  sd14:
+    fake: /root/autodl-tmp/AIGC_data/DRCT-2M/stable-diffusion-v1-4/val2017
+  sd15:
+    fake: /root/autodl-tmp/AIGC_data/DRCT-2M/stable-diffusion-v1-5/val2017
+  sd21:
+    fake: /root/autodl-tmp/AIGC_data/DRCT-2M/stable-diffusion-2-1/val2017
+  sdxl:
+    fake: /root/autodl-tmp/AIGC_data/DRCT-2M/stable-diffusion-xl-base-1.0/val2017
+  sdxl-refiner:
+    fake: /root/autodl-tmp/AIGC_data/DRCT-2M/stable-diffusion-xl-refiner-1.0/val2017
+  # sd turbo
+  sd-turbo:
+    fake: /root/autodl-tmp/AIGC_data/DRCT-2M/sd-turbo/val2017
+  sdxl-turbo:
+    fake: /root/autodl-tmp/AIGC_data/DRCT-2M/sdxl-turbo/val2017
+  # lcm
+  lcm-sd15:
+    fake: /root/autodl-tmp/AIGC_data/DRCT-2M/lcm-lora-sdv1-5/val2017
+  lcm-sdxl:
+    fake: /root/autodl-tmp/AIGC_data/DRCT-2M/lcm-lora-sdxl/val2017
+  # controlnet
+  sd-cn:
+    fake: /root/autodl-tmp/AIGC_data/DRCT-2M/sd-controlnet-canny/val2017
+  sd21-cn:
+    fake: /root/autodl-tmp/AIGC_data/DRCT-2M/sd21-controlnet-canny/val2017
+  sdxl-cn:
+    fake: /root/autodl-tmp/AIGC_data/DRCT-2M/controlnet-canny-sdxl-1.0/val2017
+  # inpainting
+  sd-inpainting:
+    fake: /root/autodl-tmp/AIGC_data/DRCT-2M/stable-diffusion-inpainting/val2017
+  sd21-inpainting:
+    fake: /root/autodl-tmp/AIGC_data/DRCT-2M/stable-diffusion-2-inpainting/val2017
+  sdxl-inpainting:
+    fake: /root/autodl-tmp/AIGC_data/DRCT-2M/stable-diffusion-xl-1.0-inpainting-0.1/val2017
+
+GenImage:
+  MidJourney:
+    real: /root/autodl-tmp/AIGC_data/GenImage/Midjourney/val/nature
+    fake: /root/autodl-tmp/AIGC_data/GenImage/Midjourney/val/ai
+  
+  sd14:
+    real: /root/autodl-tmp/AIGC_data/GenImage/stable_diffusion_v_1_4/val/nature
+    fake: /root/autodl-tmp/AIGC_data/GenImage/stable_diffusion_v_1_4/val/ai
+  
+  sd15:
+    real: /root/autodl-tmp/AIGC_data/GenImage/stable_diffusion_v_1_5/val/nature
+    fake: /root/autodl-tmp/AIGC_data/GenImage/stable_diffusion_v_1_5/val/ai
+
+  ADM:
+    real: /root/autodl-tmp/AIGC_data/GenImage/ADM/val/nature
+    fake: /root/autodl-tmp/AIGC_data/GenImage/ADM/val/ai
+  
+  GLIDE:
+    real: /root/autodl-tmp/AIGC_data/GenImage/glide/val/nature
+    fake: /root/autodl-tmp/AIGC_data/GenImage/glide/val/ai
+
+  wukong:
+    real: /root/autodl-tmp/AIGC_data/GenImage/wukong/val/nature
+    fake: /root/autodl-tmp/AIGC_data/GenImage/wukong/val/ai
+
+  VQDM:
+    real: /root/autodl-tmp/AIGC_data/GenImage/VQDM/val/nature
+    fake: /root/autodl-tmp/AIGC_data/GenImage/VQDM/val/ai
+
+  BigGAN:
+    real: /root/autodl-tmp/AIGC_data/GenImage/BigGAN/val/nature 
+    fake: /root/autodl-tmp/AIGC_data/GenImage/BigGAN/val/ai
+
+Chameleon:
+  chameleon:
+    real: /root/autodl-tmp/AIGC_data/Chameleon/test/0_real
+    fake: /root/autodl-tmp/AIGC_data/Chameleon/test/1_fake
+
+GenEval:
+  Flux:
+    fake: /root/autodl-tmp/AIGC_data/GenEval/Flux
+  GoT:
+    fake: /root/autodl-tmp/AIGC_data/GenEval/GoT
+  Infinity:
+    fake: /root/autodl-tmp/AIGC_data/GenEval/Infinity
+  NOVA:
+    fake: /root/autodl-tmp/AIGC_data/GenEval/NOVA
+  OmniGen:
+    fake: /root/autodl-tmp/AIGC_data/GenEval/OmniGen
+  sd14:
+    fake: /root/autodl-tmp/AIGC_data/GenEval/sd14
+  sdxl:
+    fake: /root/autodl-tmp/AIGC_data/GenEval/sdxl
+  GPT-4o:
+    fake: /root/autodl-tmp/AIGC_data/GPT-ImgEval/
+
